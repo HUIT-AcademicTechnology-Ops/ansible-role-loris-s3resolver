@@ -1,0 +1,20 @@
+dependencies: []
+# dependencies:
+#   - src: git+https://github.com/HUIT-AcademicTechnology-Ops/ansible-role-loris-imageserver.git
+#     name: huit-at.loris-imageserver
+#     version: master
+
+galaxy_info:
+  author: Arthur Barrett
+  description: Installs and configures an AWS S3 Resolver for the Loris Image Server
+  company: HUIT Academic Technology at Harvard University
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.0
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+  galaxy_tags:
+    - loris
+    - imageserver
+    - iiif

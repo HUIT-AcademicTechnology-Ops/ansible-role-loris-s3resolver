@@ -1,0 +1,20 @@
+---
+- name: pip install s3resolver
+  pip:
+    name: "{{ s3resolver_url }}"
+    extra_args: "--upgrade"
+  register: s3resolver_updated
+  tags: pip
+
+- name: update loris config to use S3Resolver
+  ini_file:
+    path: /etc/loris2/loris2.conf
+    section: resolver
+    option: "{{ item.option }}"
+    value: "'{{ item.value }}'"
+  with_items:
+    - { option: "impl",         value: "hxloris.s3resolver.S3Resolver" }
+    - { option: "src_img_root", value: "/usr/local/share/images/loris" }
+    - { option: "cache_root",   value: "/usr/local/share/images/loris" }
+  notify: restart apache
+  tags: loris_config

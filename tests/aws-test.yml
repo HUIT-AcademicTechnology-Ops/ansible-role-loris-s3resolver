@@ -1,0 +1,6 @@
+---
+- hosts: server
+  remote_user: ubuntu
+  become: yes
+  roles:
+    - ansible-role-loris-s3resolver
