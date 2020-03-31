@@ -13,7 +13,7 @@
     option: "{{ item.option }}"
     value: "'{{ item.value }}'"
   with_items:
-    - { option: "impl",         value: "hxloris.s3resolver.S3Resolver" }
+    - { option: "impl",         value: "{{ s3resolver_class }}" }
     - { option: "src_img_root", value: "/usr/local/share/images/loris" }
     - { option: "cache_root",   value: "/usr/local/share/images/loris" }
   notify: restart apache

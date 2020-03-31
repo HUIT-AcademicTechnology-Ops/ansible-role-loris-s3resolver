@@ -9,9 +9,10 @@ Installs and configures an [S3Resolver](https://github.com/nmaekawa/hxloris) for
 
 ## Role Variables
 
-| parameter      | required | default                                                             | comments              |
-|----------------|----------|---------------------------------------------------------------------|-----------------------|
-| s3resolver_url | no       | git+https://github.com/arthurian/hxloris.git@loris3.0.0#egg=hxloris | S3Resolver source URL |
+| parameter        | required | default                             | comments           |
+|------------------|----------|-------------------------------------|--------------------|
+| s3resolver_url   | no       | https://github.com/nmaekawa/hxloris | URL to pip install |
+| s3resolver_class | no       | hxloris.s3resolver.S3Resolver       | Resolver class     |
 
 ## Dependencies
 
