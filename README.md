@@ -1,6 +1,6 @@
 # Ansible Role: Loris S3Resolver
 
-Installs and configures an [S3Resolver]https://github.com/nmaekawa/hxloris) for the [Loris Image Server](https://github.com/loris-imageserver).
+Installs and configures an [S3Resolver](https://github.com/nmaekawa/hxloris) for the [Loris Image Server](https://github.com/loris-imageserver).
 
 ## Requirements
 
