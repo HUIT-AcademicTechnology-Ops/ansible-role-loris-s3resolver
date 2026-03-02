@@ -1,3 +1,4 @@
 ---
 s3resolver_url: git+https://github.com/arthurian/hxloris.git#egg=hxloris
 s3resolver_class: hxloris.s3resolver.S3Resolver
+loris_venv_path: /opt/loris-venv
