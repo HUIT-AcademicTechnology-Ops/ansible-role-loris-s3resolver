@@ -3,6 +3,8 @@
   pip:
     name: "{{ s3resolver_url }}"
     extra_args: "--upgrade"
+    virtualenv: "{{ loris_venv_path }}"
+    virtualenv_command: python3 -m venv
   register: s3resolver_updated
   tags: pip
 
